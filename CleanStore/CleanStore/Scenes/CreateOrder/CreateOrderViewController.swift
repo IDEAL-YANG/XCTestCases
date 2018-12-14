@@ -19,7 +19,7 @@ protocol CreateOrderDisplayLogic: class
     func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel)
 }
 
-class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
+public class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
 {
 
   var interactor: CreateOrderBusinessLogic?
@@ -57,7 +57,7 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
   
   // MARK: Routing
   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?)
   {
     if let scene = segue.identifier {
       let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
@@ -69,7 +69,7 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
   
   // MARK: View lifecycle
   
-  override func viewDidLoad()
+    override public func viewDidLoad()
   {
     super.viewDidLoad()
     doSomething()
@@ -139,7 +139,7 @@ extension CreateOrderViewController: UITextFieldDelegate {
 
 extension CreateOrderViewController {
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if let cell = tableView.cellForRow(at: indexPath as IndexPath) {
             for textField in textFields {
@@ -154,12 +154,12 @@ extension CreateOrderViewController {
 
 extension CreateOrderViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
         return (interactor?.shippingMethods.count)!
     }

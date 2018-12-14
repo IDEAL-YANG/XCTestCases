@@ -32,8 +32,8 @@ class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore
     
     var shippingMethods = [
         "Standard Shipping",
-        "Two-Day Shipping ",
-        "One-Day Shipping "
+        "Two-Day Shipping",
+        "One-Day Shipping"
     ]
   
   // MARK: Do something

@@ -43,6 +43,12 @@ class CreateOrderInteractorTests: XCTestCase
   
   class CreateOrderPresentationLogicSpy: CreateOrderPresentationLogic
   {
+    var presentExpirationDateCalled = false
+    
+    func presentExpirationDate(response: CreateOrder.FormatExpirationDate.Response) {
+        presentExpirationDateCalled = true
+    }
+    
     var presentSomethingCalled = false
     
     func presentSomething(response: CreateOrder.Something.Response)
@@ -66,4 +72,19 @@ class CreateOrderInteractorTests: XCTestCase
     // Then
     XCTAssertTrue(spy.presentSomethingCalled, "doSomething(request:) should ask the presenter to format the result")
   }
+    
+    func testFormatExpirationDateShouldAskPresenterToFormatExpirationDate()
+    {
+        // Given
+        let spy = CreateOrderPresentationLogicSpy()
+        sut.presenter = spy
+        let request = CreateOrder.FormatExpirationDate.Request(date: Date())
+        
+        // When
+        sut.formatExpirationDate(request: request)
+        
+        // Then ...
+        XCTAssertTrue(spy.presentExpirationDateCalled,"formatExpirationDate(request:) should ask the presenter to format the date")
+    }
+    
 }

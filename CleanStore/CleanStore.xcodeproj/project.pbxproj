@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		96256E6021C353CC00EE2BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256E5F21C353CC00EE2BAB /* AppDelegate.swift */; };
-		96256E6221C353CC00EE2BAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96256E6121C353CC00EE2BAB /* ViewController.swift */; };
 		96256E6521C353CC00EE2BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96256E6321C353CC00EE2BAB /* Main.storyboard */; };
 		96256E6721C353CD00EE2BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96256E6621C353CD00EE2BAB /* Assets.xcassets */; };
 		96256E6A21C353CD00EE2BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96256E6821C353CD00EE2BAB /* LaunchScreen.storyboard */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		96256E5C21C353CC00EE2BAB /* CleanStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96256E5F21C353CC00EE2BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96256E6121C353CC00EE2BAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96256E6421C353CC00EE2BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96256E6621C353CD00EE2BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96256E6921C353CD00EE2BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			children = (
 				963CE42721C354410043D394 /* Scenes */,
 				96256E5F21C353CC00EE2BAB /* AppDelegate.swift */,
-				96256E6121C353CC00EE2BAB /* ViewController.swift */,
 				96256E6321C353CC00EE2BAB /* Main.storyboard */,
 				96256E6621C353CD00EE2BAB /* Assets.xcassets */,
 				96256E6821C353CD00EE2BAB /* LaunchScreen.storyboard */,
@@ -250,7 +247,6 @@
 				963CE44721C356160043D394 /* CreateOrderInteractor.swift in Sources */,
 				963CE43F21C356160043D394 /* CreateOrderWorker.swift in Sources */,
 				963CE44521C356160043D394 /* CreateOrderViewController.swift in Sources */,
-				96256E6221C353CC00EE2BAB /* ViewController.swift in Sources */,
 				963CE44121C356160043D394 /* CreateOrderRouter.swift in Sources */,
 				96256E6021C353CC00EE2BAB /* AppDelegate.swift in Sources */,
 				963CE43D21C356160043D394 /* CreateOrderPresenter.swift in Sources */,

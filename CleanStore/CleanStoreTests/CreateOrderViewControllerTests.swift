@@ -54,6 +54,14 @@ class CreateOrderViewControllerTests: XCTestCase
   
   class CreateOrderBusinessLogicSpy: CreateOrderBusinessLogic
   {
+    var shippingMethods: [String] = []
+    
+    var formatExpirationDateCalled = false
+    
+    func formatExpirationDate(request: CreateOrder.FormatExpirationDate.Request) {
+        formatExpirationDateCalled = true
+    }
+    
     var doSomethingCalled = false
     
     func doSomething(request: CreateOrder.Something.Request)
@@ -87,6 +95,6 @@ class CreateOrderViewControllerTests: XCTestCase
     sut.displaySomething(viewModel: viewModel)
     
     // Then
-    //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
+//    XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
   }
 }

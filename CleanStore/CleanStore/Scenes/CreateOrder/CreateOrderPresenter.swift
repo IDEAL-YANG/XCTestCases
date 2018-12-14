@@ -27,7 +27,7 @@ class CreateOrderPresenter: CreateOrderPresentationLogic
     let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .short
+        dateFormatter.timeStyle = .none
         return dateFormatter
     }()
   
