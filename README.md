@@ -1,5 +1,10 @@
 # XCTestCases
 
+[![IDE](https://img.shields.io/badge/Xcode-10.1-blue.svg)](https://developer.apple.com/xcode/)
+[![Language](https://img.shields.io/badge/swift-4.2-orange.svg)](https://swift.org)
+[![Platform](https://img.shields.io/badge/platform-iOS%209-green.svg)](https://developer.apple.com/ios/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
     最近学习XCTest时的一些实例。
     
 # 创作原因
