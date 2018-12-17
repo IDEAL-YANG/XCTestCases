@@ -123,13 +123,13 @@ extension CreateOrderViewController {
 
 extension CreateOrderViewController: UITextFieldDelegate {
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         textField.resignFirstResponder()
         if let index = textFields.firstIndex(of: textField) {
             if index < textFields.count - 1 {
                 let nextTextField = textFields[index + 1]
-                nextTextField.becomeFirstResponder()
+                let resu = nextTextField.becomeFirstResponder()
             }
         }
         return true
@@ -164,11 +164,11 @@ extension CreateOrderViewController: UIPickerViewDataSource, UIPickerViewDelegat
         return (interactor?.shippingMethods.count)!
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return interactor?.shippingMethods[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         shippingMethodTextField.text = interactor?.shippingMethods[row]
     }
     

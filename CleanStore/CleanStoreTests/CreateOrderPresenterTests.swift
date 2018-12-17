@@ -105,9 +105,7 @@ class CreateOrderPresenterTests: XCTestCase
         sut.presentExpirationDate(response:response)
         
         // Then
-        let returnedDate = createOrderPresenterOutputSpy.displayViewModel.date
         let expectedDate = "6/29/07"
-//        XCTAssertEqual(returnedDate, expectedDate, "Presenting an expiration date should convert date to string")
         XCTAssert(createOrderPresenterOutputSpy.verifyExpirationDateIsFormattedAs(date: expectedDate), "Presenting an expiration date should convert date to string")
     }
     

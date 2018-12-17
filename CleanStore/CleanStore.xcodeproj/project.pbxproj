@@ -12,17 +12,11 @@
 		96256E6721C353CD00EE2BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96256E6621C353CD00EE2BAB /* Assets.xcassets */; };
 		96256E6A21C353CD00EE2BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96256E6821C353CD00EE2BAB /* LaunchScreen.storyboard */; };
 		963CE43D21C356160043D394 /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43721C356150043D394 /* CreateOrderPresenter.swift */; };
-		963CE43E21C356160043D394 /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43721C356150043D394 /* CreateOrderPresenter.swift */; };
 		963CE43F21C356160043D394 /* CreateOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43821C356150043D394 /* CreateOrderWorker.swift */; };
-		963CE44021C356160043D394 /* CreateOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43821C356150043D394 /* CreateOrderWorker.swift */; };
 		963CE44121C356160043D394 /* CreateOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43921C356150043D394 /* CreateOrderRouter.swift */; };
-		963CE44221C356160043D394 /* CreateOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43921C356150043D394 /* CreateOrderRouter.swift */; };
 		963CE44321C356160043D394 /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43A21C356150043D394 /* CreateOrderModels.swift */; };
-		963CE44421C356160043D394 /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43A21C356150043D394 /* CreateOrderModels.swift */; };
 		963CE44521C356160043D394 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43B21C356150043D394 /* CreateOrderViewController.swift */; };
-		963CE44621C356160043D394 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43B21C356150043D394 /* CreateOrderViewController.swift */; };
 		963CE44721C356160043D394 /* CreateOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43C21C356160043D394 /* CreateOrderInteractor.swift */; };
-		963CE44821C356160043D394 /* CreateOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE43C21C356160043D394 /* CreateOrderInteractor.swift */; };
 		963CE45B21C359CA0043D394 /* CreateOrderInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE45721C359CA0043D394 /* CreateOrderInteractorTests.swift */; };
 		963CE45C21C359CA0043D394 /* CreateOrderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE45821C359CA0043D394 /* CreateOrderViewControllerTests.swift */; };
 		963CE45D21C359CA0043D394 /* CreateOrderPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CE45921C359CA0043D394 /* CreateOrderPresenterTests.swift */; };
@@ -258,14 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				963CE45D21C359CA0043D394 /* CreateOrderPresenterTests.swift in Sources */,
-				963CE44621C356160043D394 /* CreateOrderViewController.swift in Sources */,
 				963CE45B21C359CA0043D394 /* CreateOrderInteractorTests.swift in Sources */,
-				963CE44021C356160043D394 /* CreateOrderWorker.swift in Sources */,
-				963CE44421C356160043D394 /* CreateOrderModels.swift in Sources */,
-				963CE43E21C356160043D394 /* CreateOrderPresenter.swift in Sources */,
-				963CE44221C356160043D394 /* CreateOrderRouter.swift in Sources */,
 				963CE45E21C359CA0043D394 /* CreateOrderWorkerTests.swift in Sources */,
-				963CE44821C356160043D394 /* CreateOrderInteractor.swift in Sources */,
 				963CE45C21C359CA0043D394 /* CreateOrderViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
