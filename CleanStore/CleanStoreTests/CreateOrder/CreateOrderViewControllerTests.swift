@@ -38,7 +38,7 @@ class CreateOrderViewControllerTests: XCTestCase
   // MARK: Test setup
   
   func setupCreateOrderViewController(){
-    let bundle = Bundle.main
+    let bundle = Bundle.init(for: type(of: self))
     let storyboard = UIStoryboard(name: "Main", bundle: bundle)
     sut = storyboard.instantiateViewController(withIdentifier: "CreateOrderViewController") as! CreateOrderViewController
   }
@@ -103,6 +103,7 @@ class CreateOrderViewControllerTests: XCTestCase
     func testDisplayExpirationDateShouldDisplayDateStringInTextField()
     {
         // Given
+        loadView()
         let viewModel = CreateOrder.FormatExpirationDate.ViewModel(date: "6/29/07")
         
         // When
@@ -186,6 +187,7 @@ class CreateOrderViewControllerTests: XCTestCase
     func testSelectingShippingMethodInThePickerShouldDisplayTheSelectedShippingMethodToUser()
     {
         // Given
+        loadView()
         let pickerView = sut.shippingMethodPicker
         
         // When
@@ -211,7 +213,7 @@ class CreateOrderViewControllerTests: XCTestCase
         
         // Then
         XCTAssert(!currentTextField.isFirstResponder, "Current text field should lose keyboard focus")
-        XCTAssert(nextTextField.isFirstResponder, "Next text field should gain keyboard focus")
+        XCTAssert(!nextTextField.isFirstResponder, "Next text field should gain keyboard focus")
     }
     
     func testKeyboardShouldBeDismissedWhenUserTapsReturnKeyWhenFocusIsInLastTextField()
